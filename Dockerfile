@@ -1,14 +1,14 @@
-# Use an official OpenJDK runtime as a parent image
-FROM openjdk:17
-
-# Set the working directory in the container to /app
-WORKDIR /app
-
-# Copy the current directory contents into the container at /app
-COPY . /app
+# Start from a base image with Java installed
+FROM openjdk:latest
 
 # Make port 8080 available to the world outside this container
-EXPOSE 2233
+EXPOSE 2333
 
-# Run the application when the container launches
-CMD ["java", "-jar", "Lavalink.jar"]
+# The application's jar file
+ARG JAR_FILE=Lavalink.jar
+
+# Add the application's jar to the container
+ADD ${JAR_FILE} Lavalink.jar
+
+# Run the jar file 
+ENTRYPOINT ["java", "-jar", "Lavalink.jar"]
