@@ -2,7 +2,7 @@
 FROM openjdk:latest
 
 # Make port 8080 available to the world outside this container
-EXPOSE 8080
+EXPOSE 443
 
 # The application's jar file
 ARG JAR_FILE=Lavalink.jar
