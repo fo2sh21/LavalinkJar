@@ -1,5 +1,5 @@
 server: # REST and WS server
-  port: 2233
+  port: 2333
   address: 0.0.0.0
   http2:
     enabled: false # Whether to enable HTTP/2 support
@@ -16,7 +16,7 @@ lavalink:
 #  defaultPluginRepository: "https://maven.lavalink.dev/releases" # optional, defaults to the Lavalink release repository
 #  defaultPluginSnapshotRepository: "https://maven.lavalink.dev/snapshots" # optional, defaults to the Lavalink snapshot repository
   server:
-    password: "fo2sh21"
+    password: "1234"
     sources:
       youtube: true
       bandcamp: true
